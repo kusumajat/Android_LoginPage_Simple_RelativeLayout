@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/login_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/username_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_title"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="119dp"
+        android:layout_marginEnd="70dp"
+        android:backgroundTint="@color/white"
+        android:hint="Username"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/password_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username_input"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="70dp"
+        android:backgroundTint="@color/white"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+
+    <ImageView
+        android:id="@+id/ic_lock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password_input"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="-28dp"
+        android:src="@drawable/gembok" />
+
+    <ImageView
+        android:id="@+id/ic_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username_input"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="-28dp"
+        android:src="@drawable/orang" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="189dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password_input"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="@color/white"
+        android:text="Log In"
+        android:textColor="#96849A"
+        android:textSize="16sp" />
+
+</RelativeLayout>
